@@ -1,0 +1,67 @@
+|Polysilicon and Isolation Design Rules|50|-|RX minimum width|>=|0.08
+|Polysilicon and Isolation Design Rules|51|-|RX minimum area|>=|0.054
+|Polysilicon and Isolation Design Rules|52|-|RX minimum space|>=|0.11
+|PC Design Rules|100|-|PC minimum width|>=|0.06
+|PC Design Rules|101a|-|PC minimum area|>=|0.042
+|PC Design Rules|102|-|PC minimum space|>=|0.12
+|M1 and V1 Design Rules|500|-|M1 minimum width|>=|0.09
+|M1 and V1 Design Rules|500b|-|M1 maximum width|<=|12
+|M1 and V1 Design Rules|501|-|M1 minimum area|>=|0.2
+|M1 and V1 Design Rules|502|-|M1 minimum space|>=|0.09
+|Mx and Vx Design Rules|600_M2|-|M2 minimum width|>=|0.1
+|Mx and Vx Design Rules|600_M3|-|M3 minimum width|>=|0.1
+|Mx and Vx Design Rules|600_M4|-|M4 minimum width|>=|0.1
+
+|RXFILL and PCFILL Design Rules|RXFILL100|-|RXFILL must not touch (LOGOBND, NWRES, PC, PCFUSE, PROTECT, RX, RXING).|≠|-
+|RXFILL and PCFILL Design Rules|RXFILL101|-|RXFILL minimum space to (RX, RXING)|≥|0.64
+|RXFILL and PCFILL Design Rules|RXFILL102|-|RXFILL minimum space to (LOGOBND, NWRES, PC, PROTECT).|≥|0.2
+|RXFILL and PCFILL Design Rules|RXFILL104|-|RXFILL minimum space to PCFUSE.|≥|3
+|RXFILL and PCFILL Design Rules|RXFILL105|-|RXFILL minimum space.|≥|0.15
+|RXFILL and PCFILL Design Rules|RXFILL106|-|RXFILL minimum width.|≥|0.3
+|RXFILL and PCFILL Design Rules|RXFILL107|-|RXFILL maximum width.|≤|0.45
+|RXFILL and PCFILL Design Rules|RXFILL110|-|RXFILL minimum within NW.|≥|0.24
+|RXFILL and PCFILL Design Rules|RXFILL111|-|RXFILL space to NW, with straddling prohibited. ≥ 0.24
+|RXFILL and PCFILL Design Rules|PCFILL200|-|PCFILL must not touch (LOGOBND, PC, PCFUSE, PCING, PROTECT, RX).|≠|-
+|RXFILL and PCFILL Design Rules|PCFILL201|-|PCFILL minimum space to (PC, PCING).|≥|0.64
+|RXFILL and PCFILL Design Rules|PCFILL202|-|PCFILL minimum space to (LOGOBND, PROTECT, RX).|≥|0.2
+|RXFILL and PCFILL Design Rules|PCFILL204|-|PCFILL minimum space to PCFUSE.|≥|3
+|RXFILL and PCFILL Design Rules|PCFILL205|-|PCFILL minimum space.|≥|0.26
+|RXFILL and PCFILL Design Rules|PCFILL206|-|PCFILL minimum width.|≥|0.3
+|RXFILL and PCFILL Design Rules|PCFILL207|-|PCFILL maximum width|≤|0.34
+|RXFILL and PCFILL Design Rules|xxFILL299|-|xxFILL must be within CHIPEDGE, where xx = PC, RX.|≥|0.075
+
+|Metal Fill Design Rules|MXFILL500|1|MxFILL must not touch (KERFEXCL, LOGOBND, Mx, PROTECT, MxING), where Mx = M1-M7, B1-B3, BA, BB, BD, EA, EB, LB.|≡|-
+|Metal Fill Design Rules|MXFILL502|-|MxFILL minimum space to PCFUSE with touching prohibited, where Mx = M1 or M2.|≥|3
+|Metal Fill Design Rules|MXFILL511|-|MxFILL minimum space to (Mx, MxING) with touching prohibited, where Mx = M1-M7.|≥|0.48
+|Metal Fill Design Rules|MXFILL512|-|MxFILL minimum space to (KERFEXCL, LOGOBND, MxEXCLUD, PROTECT), where Mx = M1-M7.|≥|0.2
+|Metal Fill Design Rules|MXFILL515|-|MxFILL minimum space, where Mx = M1-M7.|≥|0.15
+|Metal Fill Design Rules|MXFILL516|-|[MxFILL not touching IND] minimum width, where Mx = M1-M7.|≥|0.45
+|Metal Fill Design Rules|MXFILL518|-|(MxFILL touching IND) minimum width, where Mx = M1-M7.|≥|0.2
+|Metal Fill Design Rules|MXFILL519|-|MxFILL maximum width, where Mx = M1-M7|≤|3
+|Metal Fill Design Rules|MXFILL521|-|BxFILL minimum space to (Bx, BxING), where Bx = B1-B3, BA, BB, BD.|≥|0.4
+|Metal Fill Design Rules|MXFILL522|-|BxFILL minimum space to (BxEXCLUD, LOGOBND, PROTECT, KERFEXCL), where Bx = B1-B3, BA, BB, BD.|≥|0.4
+|Metal Fill Design Rules|MXFILL525|-|BxFILL minimum space, where Bx = B1-B3, BA, BB, BD.|≥|0.3
+|Metal Fill Design Rules|MXFILL526|-|[BxFILL not touching IND] minimum width, where Bx = B1-B3, BA, BB, or BD.|≥|0.9
+|Metal Fill Design Rules|MXFILL527|-|(BxFILL touching IND) minimum width, where Bx = B1-B3, BA, BB, BD.|≥|0.4
+|Metal Fill Design Rules|MXFILL528|-|BxFILL maximum width, where Bx = B1-B3, BA, BB, or BD.|≤|4
+|Metal Fill Design Rules|MXFILL541|-|ExFILL minimum space to (Ex, ExING) where Ex = EA or EB.|≥|0.8
+|Metal Fill Design Rules|MXFILL542|-|ExFILL minimum space to (ExEXCLUD, KERFEXCL, LOGOBND, PROTECT), where Ex = EA or EB.|≥|0.8
+|Metal Fill Design Rules|MXFILL545|-|ExFILL minimum space, where Ex = EA or EB.|≥|0.6
+|Metal Fill Design Rules|MXFILL546|-|[ExFILL not touching IND] minimum width, where Ex = EA or EB.|≥|1.8
+|Metal Fill Design Rules|MXFILL547|-|(ExFILL touching IND) minimum width, where Ex = EA or EB.|≥|0.8
+|Metal Fill Design Rules|MXFILL548|-|ExFILL maximum width, where Ex = EA or EB|≤|4
+|Metal Fill Design Rules|MXFILL561|-|OIFILL minimum space to (OI, OIING)|≥|4.8
+|Metal Fill Design Rules|MXFILL562|-|OIFILL minimum space to (OIEXCLUD, LOGOBND, PROTECT, KERFEXCL)|≥|4.8
+|Metal Fill Design Rules|MXFILL563|-|OIFILL minimum space to FUSE ; OIFILL must not touch FUSE|≥|4.8
+|Metal Fill Design Rules|MXFILL565|-|OIFILL minimum space|≥|2.4
+|Metal Fill Design Rules|MXFILL566|-|(OIFILL not touching (IND, C4MOD, WBMOD) ) minimum length and width|≥|7.19
+|Metal Fill Design Rules|MXFILL567|-|(OIFILL not touching (IND, C4MOD, WBMOD) ) maximum length and width|≤|7.21
+|Metal Fill Design Rules|MXFILL568|-|(OIFILL touching IND) minimum length and width|≥|3.19
+|Metal Fill Design Rules|MXFILL569|-|(OIFILL touching IND) maximum length and width|≤|3.21
+|Metal Fill Design Rules|MXFILL581|-|MxFILL minimum space to (QT not touching MIM_NI) with touching prohibited, where Mx = metal level OLAST12X or ELAST4X depending on the metal stack, immediately below LB|≥|0.8
+|Metal Fill Design Rules|MXFILL591|-|LBFILL minimum space to LB.|≥|4
+|Metal Fill Design Rules|MXFILL592|-|LBFILL minimum space to (C4MOD, IND, KERFEXCL, LBEXCLUD, LOGOBND, PROTECT, WBMOD) with touching prohibited.|≥|4
+|Metal Fill Design Rules|MXFILL595|-|LBFILL minimum space.|≥|2.4
+|Metal Fill Design Rules|MXFILL596|-|LBFILL minimum width.|≥|7.2
+|Metal Fill Design Rules|MXFILL598|-|xxFILL must be square, where xx = M1-M7, B1-B3, BA, BB, BD, EA, EB, LB.|≡|-
+|Metal Fill Design Rules|MXFILL599|-|xxFILL must be within CHIPEDGE, where xx = M1-M7, B1-B3, BA, BB, BD, EA, EB, LB.|≥|0.1
